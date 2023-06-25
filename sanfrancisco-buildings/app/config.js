@@ -1,6 +1,6 @@
 define([], function () {
   return {
-    portalUrl: "https://uvgeomatica.maps.arcgis.com/home/index.html",
+    portalUrl: "https://uvgeomatica.maps.arcgis.com/",
     itemId: "e2e6cd326c3c4aa38097c8d8b2fb3622",
     buildingLayerTitle: "Construcciones",
     heightField: "ALTURAS",
