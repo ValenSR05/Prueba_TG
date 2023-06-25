@@ -1,11 +1,11 @@
 define([], function () {
   return {
-    portalUrl: "http://jsapi.maps.arcgis.com/",
-    itemId: "2e38f798f3124f2dae84217839cc43dc",
-    buildingLayerTitle: "San Francisco Buildings",
-    heightField: "height_m",
-    usageField: "landuse",
-    yearField: "yrbuilt",
+    portalUrl: "https://uvgeomatica.maps.arcgis.com/home/index.html",
+    itemId: "e2e6cd326c3c4aa38097c8d8b2fb3622",
+    buildingLayerTitle: "Construcciones",
+    heightField: "ALTURAS",
+    usageField: "COMUNA",
+    yearField: "NPISOS",
     timeline: {
       bin: 5,
       minYear: 1900,
@@ -14,35 +14,35 @@ define([], function () {
     noDataColor: "white",
     otherColor: "#FFB55A",
     yearClasses: [{
-      minYear: 1500,
-      maxYear: 1899,
+      minYear: 1,
+      maxYear: 2,
       color: "#bd0026",
-      label: "<1900"
+      label: "<2"
     }, {
-      minYear: 1900,
-      maxYear: 1924,
+      minYear: 3,
+      maxYear: 4,
       color: "#f03b20",
-      label: "1900 - 1924"
+      label: "3-4"
     }, {
-      minYear: 1925,
-      maxYear: 1949,
+      minYear: 5,
+      maxYear: 6,
       color: "#fd8d3c",
-      label: "1925 - 1949"
+      label: "5-6"
     }, {
-      minYear: 1950,
-      maxYear: 1974,
+      minYear: 7,
+      maxYear: 8,
       color: "#feb24c",
-      label: "1951 - 1974"
+      label: "7-8"
     }, {
-      minYear: 1975,
-      maxYear: 1999,
+      minYear: 8,
+      maxYear: 9,
       color: "#fed976",
-      label: "1975 - 1999"
+      label: "8-9"
     }, {
-      minYear: 2000,
-      maxYear: 2020,
+      minYear: 9,
+      maxYear: 10,
       color: "#ffffb2",
-      label: "2000 - 2020"
+      label: "9-10"
     }],
     heightVariable: {
       stops: [
@@ -52,21 +52,21 @@ define([], function () {
       binSize: 10
     },
     usageValues: [{
-      value: "MIPS",
+      value: "Comuna 13",
       color: "#FD7F6F",
-      label: "Office"
+      label: "Comuna 13"
     }, {
-      value: "RESIDENT",
+      value: "Comuna 8",
       color: "#7EB0D5",
-      label: "Residential"
+      label: "Comuna 8"
     }, {
-      value: "MIXRES",
+      value: "Comuna 15",
       color: "#BD7EBE",
-      label: "Mixed use"
+      label: "Comuna 15"
     }, {
-      value: "MIXED",
+      value: "Comuna 12",
       color: "#B2E061",
-      label: "Mixed use without residential"
+      label: "Comuna 12"
     }]
   }
 });
